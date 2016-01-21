@@ -1,7 +1,7 @@
 # socket.io-user-session
 
 ## Fast example
-### Server-side:
+###### Server-side:
 ```
 var port = 8222;
 var sessions = {}; //sessions storage
@@ -19,7 +19,7 @@ io.on('connection', function(socket){
     });
 });
 ```
-### Client-side:
+###### Client-side:
 ```
 var config = {
     url: 'http://mypage.com',
@@ -32,7 +32,6 @@ var socket = io.connect(config.url+':'+config.port, {'sync disconnect on unload'
 var sessionId = cookies.cookieValue(cookiename);
 
 socket.emit('check session', sessionId);
-
 socket.on('new session', function(sessionId){
 	cookies.setCookie(cookiename, sessionId);
 });
