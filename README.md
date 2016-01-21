@@ -27,7 +27,7 @@ var config = {
     cookiename: 'usersession'
 };
 var cookies = myCookies(); //My JavaScript library https://github.com/SzymonLisowiec/myCookies
-var socket = io.connect(config.url+':'+config.port, {'sync disconnect on unload': true});
+var socket = io.connect(config.url+':'+config.port);
 
 var sessionId = cookies.cookieValue(cookiename);
 
