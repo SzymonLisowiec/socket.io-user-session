@@ -26,7 +26,11 @@ io.on('connection', function(socket){
 ###### socket - (Object) socket received after connection with client
 ###### sessions - (Object) sessions storage
 ###### callback - (Function) further actions; callback(io, socket, session, clearsocket)
-###### sessionIdPattern - [Optional](String) Random string to create sessionId; Default: Math.random().toString(16).slice(2)+(new Date()).getTime().toString()
+###### sessionIdPattern - (String)(Optional) Random string to create sessionId;
+Default sessionIdPattern:
+```
+Math.random().toString(16).slice(2)+(new Date()).getTime().toString()
+```
 
 ## License
 MIT
