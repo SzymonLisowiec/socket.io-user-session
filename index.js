@@ -1,3 +1,4 @@
+var crypto = require('crypto');
 module.exports = function(io, socket, sessions, callback, sessionIdPattern, sessionId, clearsocket){
     clearsocket = socket;
     sessionId = null;
