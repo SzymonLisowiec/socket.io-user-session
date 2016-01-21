@@ -26,7 +26,7 @@ var config = {
     port: 8222,
     cookiename: 'usersession'
 };
-var cookies = myCookies(); //My JavaScript library [myCookies](https://github.com/SzymonLisowiec/myCookies)
+var cookies = myCookies(); //My JavaScript library https://github.com/SzymonLisowiec/myCookies
 var socket = io.connect(config.url+':'+config.port, {'sync disconnect on unload': true});
 
 var sessionId = cookies.cookieValue(cookiename);
