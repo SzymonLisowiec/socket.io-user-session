@@ -24,6 +24,7 @@ module.exports = function(io, socket, sessions, callback, sessionIdPattern, sess
         }
         
         socket.join(sessionId);
+        socket.privemit = socket.emit;
         socket.emit = io.to(sessionId).emit;
         callback(io, socket, sessions[sessionId], clearsocket);
     });
