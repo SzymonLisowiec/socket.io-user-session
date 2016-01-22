@@ -1,6 +1,6 @@
 {
   "name": "socket.io-user-session",
-  "version": "1.4",
+  "version": "1.4.0",
   "description": "Sessions system for socket.io",
   "main": "index.js",
   "repository": {
