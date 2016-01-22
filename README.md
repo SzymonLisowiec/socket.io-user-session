@@ -1,5 +1,7 @@
 # socket.io-user-session
-
+```
+npm install socket.io-user-session
+```
 ## Fast example
 ###### Server-side:
 ```
